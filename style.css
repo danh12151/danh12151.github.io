@@ -18,19 +18,39 @@ section {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 49% 3% 48%;
+    grid-template-columns: 35% auto;
 }
+@media only screen and (max-width: 600px) {  
+    .grid-container{
+        grid-template-columns: 100%;
+    }
+}
+
 .left-grid-item{
+    padding-left: 3%;
+    padding-right: 3%;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: 0;
 }
+@media only screen and (max-width: 600px) {  
+    .left-grid-item{
+        margin: auto;
+    }
+}
 .right-grid-item{
+    padding-left: 3%;
+    padding-right: 3%;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: auto;
     margin-left: 0;
+}
+@media only screen and (max-width: 600px) {  
+    .right-grid-item{
+        margin: auto;
+    }
 }
 .hidden{
     opacity: 0;
